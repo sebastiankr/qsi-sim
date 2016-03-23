@@ -12,8 +12,8 @@ require('autocmdr/lib/help')(program);
 
 program
 	.parse(process.argv)
-	.option('--host <hostname>', 'hostname', 'localhost')
-	.option('-p, --port <port>', 'port', 3000);
+	.option('--host <hostname>', 'hostname', 'mode.eascientific.com')
+	.option('-p, --port <port>', 'port', 80);
 
 if (program.args.length < 1) {
 	console.log('No command specified. See \'qsi-sim --help\':');
